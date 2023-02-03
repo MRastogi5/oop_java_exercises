@@ -6,4 +6,13 @@ public class LionCat extends AbstractCat {
     public String getSetting() {
         return "wild";
     }
+
+    @Override
+    public int getAverageHeight() {
+        return 1100;
+    }
+    @Override
+    public String eat() {
+        return "Roar!!!!";
+    }
 }

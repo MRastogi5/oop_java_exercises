@@ -7,14 +7,10 @@ public abstract class AbstractCat implements Cat{
     public int averageHeight;
 
     @Override
-    public String eat() {
-        return "Cat is sleeping";
-    }
+    public abstract String eat();
 
     @Override
-    public int getAverageHeight() {
-        return 178;
-    }
+    public abstract int getAverageHeight();
 
     @Override
     public boolean isAsleep() {
