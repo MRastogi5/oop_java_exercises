@@ -4,12 +4,12 @@ public class CheetahCat extends AbstractCat {
 
     @Override
     public String getSetting() {
-        return "wild";
+        return setting = "wild";
     }
 
     @Override
     public int getAverageHeight() {
-        return 1100;
+        return averageHeight = 1100;
     }
 
     @Override

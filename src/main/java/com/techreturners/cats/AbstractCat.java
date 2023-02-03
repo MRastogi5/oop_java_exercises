@@ -2,30 +2,28 @@ package com.techreturners.cats;
 
 public abstract class AbstractCat implements Cat{
 
-    public boolean sleep = false;
-    public boolean setting;
-    public int averageHeight;
+    protected boolean isAsleep = false;
+    protected String setting;
+    protected int averageHeight;
 
     @Override
     public abstract String eat();
-
     @Override
     public abstract int getAverageHeight();
+    @Override
+    public abstract String getSetting() ;
 
     @Override
     public boolean isAsleep() {
-        return sleep;
+        return isAsleep;
     }
-
     @Override
     public void goToSleep() {
-        sleep = true;
+        isAsleep = true;
     }
-
     @Override
     public void wakeUp() {
-        sleep = false;
+        isAsleep = false;
     }
 
-    public abstract String getSetting() ;
 }
