@@ -2,7 +2,7 @@ package com.techreturners.cats;
 
 public abstract class AbstractCat implements Cat{
 
-    public boolean sleep;
+    public boolean sleep = false;
     public boolean setting;
     public int averageHeight;
 
@@ -14,17 +14,17 @@ public abstract class AbstractCat implements Cat{
 
     @Override
     public boolean isAsleep() {
-        return false;
+        return sleep;
     }
 
     @Override
     public void goToSleep() {
-
+        sleep = true;
     }
 
     @Override
     public void wakeUp() {
-
+        sleep = false;
     }
 
     public abstract String getSetting() ;
